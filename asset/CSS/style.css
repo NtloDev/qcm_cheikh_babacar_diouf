@@ -1,0 +1,476 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    position: relative;
+    background-color: #042425;
+    height: 100px;
+}
+.header-title{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 40%;
+    top: 30px;
+    font-weight: bold;
+}
+.conteneur{
+    background-image: url(../IMG/Images/img-bg.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -30px;
+}
+.container{
+    position: relative;
+    background-color: white;
+    width: 40%;
+    height: 300px;
+    left: 30%;
+    top: 15%;
+}
+.header-container{
+    background-color: #3addd6;
+    height: 60px;
+}
+.title{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    left: 20px;
+    top: 13px;
+}
+.input-form{
+    height: 60px;
+    margin: 5px 35px;
+}
+.form-controle{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 5px;
+}
+.error-form{
+    color: red;
+    width: 100%;
+    font-size: 8px;
+    font-weight: bold;
+
+}
+.icon-form{
+    
+    width: 35;
+    height: 20px;
+    
+    position: relative;
+    left: 96%;
+    top: 35px;
+}
+.icon-form-login{
+    background-image: url(../IMG/Images/Icônes/ic-login.png);
+    background-repeat: no-repeat;
+}
+.icon-form-pwd{
+    background-image: url(../IMG/Images/Icônes/icone-password.png);
+    background-repeat: no-repeat;
+}
+.btn-form{
+    margin-top: 40px;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    background-color: #3addd6;
+    font-size: 15px;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid darkturquoise;
+}
+.link-form{
+    position: relative;
+    left: 10%;
+}
+.admin-container{
+    position: relative;
+    background-color: white;
+    width: 96%;
+    height: 600px;
+    margin-left: 20px;
+    top: 10px;
+}
+.admin-container-header{
+    width: 100%;
+    height: 80px;
+    background-color: #51bfd0;
+}
+.admin-container-header-title{
+    color : white;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30%;
+    top: 20px;
+}
+.admin-container-header-deconnexion{
+    position: relative;
+    left: 85%;
+    top: -35px;
+    width: 10%;
+    height: 30px;
+    background-color: #3addd6;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+.admin-container-menu{
+    position: relative;
+    top: 40px;
+    width: 30%;
+    height: 400px;
+    left: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    
+}
+.admin-container-menu-profil{
+    position: relative;
+    top: px;
+    height: 150px;
+    background-color:#51bfd0 ;
+}
+.profil-image{
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.prenom-profil{
+    position: relative;
+    color: white;
+    top: -100px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+.nom-profil{
+    position: relative;
+    color: white;
+    top: -120px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.admin-container-menu-profil-links{
+    display: inline-block;
+    color: yellow;
+    padding-inline-start: 15px;
+    margin-top: 30px;
+    line-height: 3px;
+    text-decoration: none;
+}
+.admin-container-menu-profil-links-icones{
+    position: relative;
+    left: 180px;
+}
+.admin-container-links{
+    position: relative;
+    background-color:white;
+    width: 210%;
+    left: 110%;
+    height: 482px;
+    top: -420px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.nbre-question-title{
+    position: relative;
+    left: 45%;
+    top: 10px;
+}
+.questions{
+    position: relative;
+    left: 20px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    width: 90%;
+}
+.suivant{
+    position: relative;
+    left: 85%;
+    background-color: #3addd6;
+    width: 10%;
+}
+.inscription-admin{
+    position: relative;
+    left: 20px;
+    margin-top: 5px;
+    line-height: 8px;
+}
+
+.input{
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 204, 204);
+}
+.inscription-admin-title-form{
+    font-size: 12px;
+    color: rgb(110, 110, 105);
+}
+.inscription-admin-title1{
+    font-weight: bold;
+
+}
+.inscription-admin-title2{
+    font-size: 14px;
+    color: rgb(110, 110, 105);
+}
+.avatar{
+    font-weight: bold;
+    font-size: 13px;
+}
+.fileUpload{
+    position: relative;
+    left: 5%;
+    background-color:#51bfd0 ;
+    border-radius: 3px;
+    border: 2px solid rgb(145, 193, 212);
+}
+.creer{
+    position: relative;
+    left: 10%;
+    top: 15px;
+    background-color:#51bfd0 ;
+    border-radius: 3px;
+    border: 2px solid rgb(145, 193, 212);
+}
+.profil-image-avatar{
+    position: relative;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 0%;
+
+}
+.profil-image-avatar-title{
+    position: relative;
+    width: 20%;
+    height: 150px;
+    top: -390px;
+    left: 75%;
+
+}
+.liste-joueur-title{
+    position: relative;
+    left: 35%;
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+.liste-joueur-box{
+    position: relative;
+    margin-left: 15%;
+    width: 70%;
+    height: 387px;
+    border-radius: 10px;
+    border: 2px solid rgb(145, 193, 212);
+}
+.suivant-joueur{
+    position: relative;
+    left: 75%;
+    background-color: #3addd6;
+    width: 10%;
+}
+.joueur-inscription{
+    background-color: white;
+    position: relative;
+    top: 30px;
+    width: 90%;
+    height: 600px;
+    left: 60px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.inscription-joueur{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    margin-top: 5px;
+    line-height: 9px;
+}
+.input2{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 204, 204);
+}
+.inscription-joueur-title-form{
+    font-size: 22px;
+    color: rgb(110, 110, 105);
+}
+.inscription-joueur-title1{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.inscription-joueur-title2{
+    font-size: 19px;
+    color: rgb(110, 110, 105);
+}
+.avatar2{
+    font-weight: bold;
+    font-size: 17px;
+}
+.fileUpload2{
+    position: relative;
+    left: 13%;
+    height: 30px;
+    background-color:#51bfd0 ;
+    border-radius: 3px;
+    border: 2px solid rgb(145, 193, 212);
+}
+.creer2{
+    position: relative;
+    left: 10%;
+    height: 30px;
+    background-color:#51bfd0 ;
+    border-radius: 3px;
+    border: 2px solid rgb(145, 193, 212);
+}
+.profil-image-avatar{
+    position: relative;
+    width: 20%;
+    height: 150px;
+    top: -400px;
+    left: 70%;
+
+}
+.profil-image-avatar-title{
+    position: relative;
+    width: 20%;
+    height: 150px;
+    top: -390px;
+    left: 75%;
+
+}
+.joueur-container{
+    position: relative;
+    background-color: rgb(241, 231, 231);
+    width: 96%;
+    height: 600px;
+    margin-left: 20px;
+    top: 30px;
+}
+.joueur-container-header{
+    position: relative;
+    margin-top: -50px;
+    width: 100%;
+    height: 100px;
+    background-color: #51bfd0;
+}
+.joueur-container-header-title{
+    position: relative;
+    color : white;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    top: 10px;
+    text-align: center;
+}
+.joueur-container-header-deconnexion{
+    position: relative;
+    left: 85%;
+    top: -100px;
+    width: 10%;
+    height: 30px;
+    background-color: #3addd6;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+.joueur-container-menu-profil{
+    position: relative;
+    height: 25px;
+    top:-90px;
+ }
+ .profil-image2{
+    width: 5%;
+    top: 20px;
+    margin-left: 30px;
+    height: 60px;
+}
+.prenom-profil2{
+    position: relative;
+    color: white;
+    top: -20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.nom-profil2{
+    position: relative;
+    color: white;
+    top: -63px;
+    margin-left: 65px;
+    font-size: 20px;
+}
+.logerror{
+    color: red;
+    position: relative;
+    top: -600px;
+    margin-left: 100px;
+}
+.joueur-body{
+    position: relative;
+    background-color:white;
+    width: 95%;
+    left: 30px;
+    margin-top: 15px;
+    height: 470px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.joueur-body-question{
+    position: relative;
+    background-color:white;
+    width: 65%;
+    left: 5px;
+    margin-top: 15px;
+    height: 440px;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 200, 221);
+}
+.joueur-body-question-entete{
+    position: relative;
+    background-color:rgb(252, 244, 244);
+    width: 90%;
+    left: 25px;
+    margin-top: 15px;
+    height: 100px;
+    border: 1px solid rgb(41, 200, 221);
+}
+.joueur-body-score{
+    position: relative;
+    background-color:white;
+    width: 30%;
+    left: 68%;
+    margin-top: -415px;
+    height: 340px;
+    border: 1px solid rgb(41, 200, 221);
+}
+.creer-question-title{
+    position: relative;
+    color: rgb(41, 200, 221) ;
+    left: 10%;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.creer-question-box{
+    position: relative;
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 90%;
+    height: 387px;
+    border-radius: 10px;
+    border: 2px solid rgb(145, 193, 212);
+}
