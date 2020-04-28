@@ -474,3 +474,93 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(145, 193, 212);
 }
+.input3{
+    width: 85%;
+    height: 70px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+}
+.titres-input{
+    font-size: 20px;
+}
+#form-question{
+    position: relative;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.input4{
+    width: 10%;
+    height: 30px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+}
+.input5{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+}
+#ajout-reponse{
+    position: relative;
+    top: -40px;
+    margin-left: 92%;
+    height: 40px;
+    width: 6%;
+    background-image: url(../IMG/Images/Icônes/ic-ajout-réponse.png);
+}
+.enregistrer-question{
+    position: absolute;
+    left: 83%;
+    top: 340px;
+    width: 15%;
+    height: 40px;
+    background-color: #3addd6;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+
+}
+.titres-input2{
+    position: relative;
+    font-size: 20px;
+    top: -25px;
+}
+
+.input5-1{
+    position: relative;
+    top: -25px;
+    width: 60%;
+    height: 35px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+}
+.input6{
+    position: relative;
+    top: -15px;
+    width: 10%;
+    height: 30px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+}
+.input7{
+    position: relative;
+    top: -15px;
+    width: 10%;
+    height: 30px;
+    border: 2px solid rgb(211, 204, 204);
+    background-color: rgb(250, 250, 250);
+    margin-left: 0%;
+}
+.supp{
+    position: relative;
+    top: -18px;
+    margin-left: -12%;
+}
+.supp2{
+    position: relative;
+    top: -18px;
+    margin-left: -8%;
+}
