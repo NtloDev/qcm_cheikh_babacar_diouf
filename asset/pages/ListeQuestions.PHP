@@ -10,31 +10,34 @@
         <div class="nbre-question">
             <form method="post" action="" class="nbre-question-form">
                 <div class="nbre-question-title">Nbre de question/Jeu
-                <input type="number" name="nbrequestion">
-                <input type="submit" name="ok" value="ok"> </div>
-                <?php 
+                <input type="number" name="nbrquestion" class="nbrequestion">
+                <input type="submit" name="ok" value="ok" class="nbrequestionOK"> </div>
+                <button class="suivant" >Suivant</button>
+            <br><br><br><br> 
+            <div class="liste-question-box">
+            <?php 
+            
+            $qes = file_get_contents('asset/JSON/question.json');
+
+            // on decode le fichier et le transformer sous forme de table c'estquoi j'ai mis true
+            $qes = json_decode($qes,true);
+
+            // on affecte le tableau tab dans le fichier json
+        
             if (isset($_POST['ok']))
             {
-                echo '<br>';
-                for ($i=1 ;$i<=$_POST['nbrequestion'] ; $i++)
-                {
-                    $tab[]= $i;
-                    
-                }
-                ?>
-                <div class="questions" ><?php
-                foreach($tab as $ligne)
-                {
-                    echo $ligne;
-                    echo'<br>';?>
-                <?php
-                }?>
-                </div><?php
+               $nbrquestion = $_POST['nbrquestion'];
+               var_dump($nbrquestion);
+               for ($i=1 ; $i<= $nbrquestion ; $i++)
+               {
+
+                   echo $i;
+                   echo '<br';
+               }
             }
             ?>
-            <br><br><br><br> 
+            </div>
             
-            <button class="suivant" >Suivant</button>
             
             </form>
         </div>

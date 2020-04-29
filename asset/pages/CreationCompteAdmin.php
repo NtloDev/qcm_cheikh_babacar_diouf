@@ -97,8 +97,8 @@
                 // on cree un tableau $tab avec les noms des variables comme indices
                 $tab =
                 [
-                    'prenom' => [],
-                    'nom' => [],
+                    'prenomad' => [],
+                    'nomad' => [],
                     'login' => [],
                     'mdp' => [],
                     'image' =>[],
@@ -106,12 +106,12 @@
                 ];
 
                 // ensuite on affecte les donnes du formulaire sur le table tab
-                $tab['prenom'] = $prenom;
-                $tab['nom']= $nom;
+                $tab['prenomad'] = $prenom;
+                $tab['nomad']= $nom;
                 $tab['login'] = $login;
                 $tab['mdp'] = $mdp;
                 $tab['image'] = $photo;
-                $tab['role'] = 'joueur';
+                $tab['role'] = 'admin';
 
                 // on appelle le fichier json
                 $save = file_get_contents('asset/JSON/save.json');

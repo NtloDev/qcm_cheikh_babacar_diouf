@@ -18,8 +18,8 @@
                 is_connect ();
                 ?>
                 <img src="asset/JSON/<?php echo $_SESSION['user']['image']; ?>" class="profil-image" />
-                <p class="prenom-profil"><?php echo $_SESSION['user']['prenom'];?></p>
-                <p class="nom-profil"><?php echo $_SESSION['user']['nom'];?></p>
+                <p class="prenom-profil"><?php echo $_SESSION['user']['prenomad'];?></p>
+                <p class="nom-profil"><?php echo $_SESSION['user']['nomad'];?></p>
             </div>
             <div class="admin-container-menu-profil-links">
             <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=1">Liste Questions  <img  src="asset/IMG/Images/Icônes/ic-liste.png" class="admin-container-menu-profil-links-icones" /></a></p><br>

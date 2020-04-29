@@ -112,12 +112,12 @@ body{
     font-weight: bold;
     font-size: 25px;
     margin-left: 30%;
-    top: 20px;
+    top: 35px;
 }
 .admin-container-header-deconnexion{
     position: relative;
     left: 85%;
-    top: -35px;
+    top: -5px;
     width: 10%;
     height: 30px;
     background-color: #3addd6;
@@ -156,7 +156,7 @@ body{
 .nom-profil{
     position: relative;
     color: white;
-    top: -120px;
+    top: -100px;
     margin-left: 150px;
     font-size: 20px;
 }
@@ -164,8 +164,8 @@ body{
     display: inline-block;
     color: yellow;
     padding-inline-start: 15px;
-    margin-top: 30px;
-    line-height: 3px;
+    margin-top: 10px;
+    line-height: 0px;
     text-decoration: none;
 }
 .admin-container-menu-profil-links-icones{
@@ -184,9 +184,34 @@ body{
 }
 .nbre-question-title{
     position: relative;
-    left: 45%;
+    left: 47%;
     top: 10px;
+    font-size: 22px;
+    color: rgb(172, 153, 130);
 }
+.nbrequestion{
+    position: relative;
+    left: 0%;
+    width: 7%;
+    height: 25px;
+}
+.nbrequestionOK{
+position: relative;
+    left: 0%;
+    width: 5%;
+    height: 35px;
+    background-color:#1d5f69 ;
+    font-size: 20px;
+}
+.liste-question-box{
+    position: relative;
+    margin-left: 5%;
+    top: -50px;
+    width: 90%;
+    height: 387px;
+    border-radius: 10px;
+    border: 2px solid rgb(221, 211, 198);
+     }
 .questions{
     position: relative;
     left: 20px;
@@ -196,6 +221,7 @@ body{
 }
 .suivant{
     position: relative;
+    top: -45px;
     left: 85%;
     background-color: #3addd6;
     width: 10%;
@@ -274,6 +300,41 @@ body{
     height: 387px;
     border-radius: 10px;
     border: 2px solid rgb(145, 193, 212);
+}
+.liste-joueur-box-nom{
+    position: relative;
+    margin-left: 5%;
+    width: 30%;
+    height: 380px;
+    
+
+}
+.liste-joueur-box-prenom{
+    position: relative;
+    margin-left: 40%;
+    top: -103.5%;
+    width: 30%;
+    height: 380px;
+    
+
+}
+.liste-joueur-box-score{
+    position: relative;
+    margin-left: 70%;
+    top: -206%;
+    width: 30%;
+    height: 380px;
+    
+}
+p{
+    position: relative;
+    top: -7%;
+    line-height: 3px;
+    font-size: 20px;
+}
+h2{
+    position: relative;
+    top: -4%;
 }
 .suivant-joueur{
     position: relative;

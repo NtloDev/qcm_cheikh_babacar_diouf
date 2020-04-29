@@ -29,24 +29,18 @@
             </div>
         </div>
         <?php 
-            if (isset($_POST['enregistrer'])){
-                $question = $_POST['question'];
-            $nbrpoints = $_POST['nbrpoints'];
-            $reponse1 = $_POST['reponsetexte'];
+            if (!empty($_POST)){
+                $tab = [];
+                unset($_POST['enregister']);
+                $tab=$_POST;
+                var_dump($tab);
+                
+               
 
-                $tab =
-                [
-                    'question' => [],
-                    'nbrpoints' => [],
-                    'reponse1' => [],
-                    'reponse2' =>[],
-                    'reponse3'=>[],
-                ];
+                
+                
 
-                // ensuite on affecte les donnes du formulaire sur le table tab
-                $tab['question'] = $question;
-                $tab['nbrpoints']= $nbrpoints;
-                $tab['reponse1'] = $reponse1;
+        
 
                 $save = file_get_contents("asset/JSON/question.json");
                 $save= json_decode($save,true);
@@ -56,33 +50,42 @@
             }
         ?>
         <script>
+            var nbrinput= 0;
+            <?php $nbrinput=0; ?>
             function AddInput(){
+                nbrinput++;
+                <?php $nbrinput++; ?>
+                
              const   texte = document.getElementById("select").options[document.getElementById('select').selectedIndex].text;
                 if (texte == "Texte")
                 {                
                 var divInputs = document.getElementById('form-question');
                 var newInput = document.createElement('div');
-                newInput.innerHTML =` <label for = "reponsetexte" class="titres-input2">Reponse </label><input type="text" name="reponsetexte" class="input5-1"><a href='' class="link-form"><img src="asset/IMG/Images/Icônes/ic-supprimer.png" class="supp2" /></a> ` ;
+                newInput.innerHTML = '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' + nbrinput + ' </label>' +
+                                     '<input type=\"text\" name=\"rep'+nbrinput+'\" class=\"input5-1\">' + '<a href=\"\" class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp2\" /></a>';                   
+    
                     divInputs.appendChild(newInput);       
                 } 
                 else if (texte == "Choix multiple")
                 {                
                 var divInputs = document.getElementById('form-question');
                 var newInput = document.createElement('div');
-                newInput.innerHTML =` <label for = "reponsetexte" class="titres-input2">Reponse </label>
-                    <input type="text" name="reponsetexte" class="input5-1">
-                    <input type = "checkbox" name="choix" value="choix1"  class ="input6">
-                    <a href='' class="link-form"><img src="asset/IMG/Images/Icônes/ic-supprimer.png" class="supp" /></a> ` ;
+                newInput.innerHTML = 
+                    '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' +nbrinput+ '  </label>' +
+                    '<input type=\"text\" name=\"rep'+nbrinput+'\" class=\"input5-1\">' +
+                    '<input type = \"checkbox\" name=\"choix' +nbrinput+ '\" value=\"choix' +nbrinput+ '\"  class =\"input6\">' +
+                    '\<a href=\'\' class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp\" /></a>'  ;
                     divInputs.appendChild(newInput);       
                 } 
                 else if (texte == "Un seul choix")
                 {                
                 var divInputs = document.getElementById('form-question');
                 var newInput = document.createElement('div');
-                newInput.innerHTML =` <label for = "reponsetexte" class="titres-input2">Reponse </label>
-                    <input type="text" name="reponsetexte" class="input5-1">
-                    <input type = "radio" name="choix2" value="Oui" class ="input7">
-                    <a href='' class="link-form"><img src="asset/IMG/Images/Icônes/ic-supprimer.png" class="supp" /></a> ` ;
+                newInput.innerHTML = 
+                    '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' +nbrinput+ ' </label>' +
+                    '<input type=\"text\" name=\"rep'+nbrinput+'\" class=\"input5-1\">' +
+                    '<input type = \"radio\" name=\"val' +nbrinput+ '\" class =\"input7\">' +
+                    '<a href=\'\' class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp\" /></a>' ;
                     divInputs.appendChild(newInput);       
                 } 
 
