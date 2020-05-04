@@ -203,7 +203,7 @@ position: relative;
     background-color:#1d5f69 ;
     font-size: 20px;
 }
-.liste-question-box{
+#liste-question-box{
     position: relative;
     margin-left: 5%;
     top: -50px;
@@ -219,12 +219,64 @@ position: relative;
     border: 1px solid silver;
     width: 90%;
 }
-.suivant{
+.questionaffiche{
+    
+    color:rgb(131, 103, 70) ;
+    font-weight: bold;
+    font-size: 23px;
+}
+.questionafficheinput{
     position: relative;
-    top: -45px;
+    border: 2px solid rgb(233, 230, 225);
+    margin-left: 2%;
+}
+.suivant{
+    position: absolute;
+    top: 395px;
     left: 85%;
     background-color: #3addd6;
-    width: 10%;
+    width: 15%;
+    height: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.suivant2{
+    margin-top: 140px;
+    position: absolute;
+    left: 78%;
+    background-color: #3addd6;
+    width: 15%;
+    height: 26px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.jouer{
+    margin-top: 400px;
+    position: absolute;
+    left: 78%;
+    background-color: #3addd6;
+    width: 15%;
+    height: 26px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.precedent{
+    margin-top: 140px;
+    position: absolute;
+    left: 5%;
+    background-color: #b2bebe;
+    width: 15%;
+    height: 26px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
 }
 .inscription-admin{
     position: relative;
@@ -502,12 +554,54 @@ h2{
 }
 .joueur-body-question-entete{
     position: relative;
-    background-color:rgb(252, 244, 244);
+    background-color:rgb(241, 241, 241);
     width: 90%;
     left: 25px;
     margin-top: 15px;
     height: 100px;
     border: 1px solid rgb(41, 200, 221);
+    text-align: center;
+}
+.joueur-body-question-rep
+{
+    position: relative;
+    
+    font-size: 30px;
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: bold;
+    
+}
+.joueur-question-num{
+   
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.joueur-question-title{
+    
+    font-size: 30px;
+}
+.joueur-question-points{
+    position: relative;
+    background-color:rgb(241, 241, 241);
+    width: 8%;
+    left: 85.4%;
+    margin-top: 1%;
+    height: 30px;
+    border: 1px solid rgb(41, 200, 221);
+    text-align: center;
+
+}
+.joueur-body-question-input{
+    width: 5%;
+    height: 10px;
+    
+}
+.joueur-question-choix2{
+    position: relative;
+    margin-left: 25%;
+    margin-top: 10%;
 }
 .joueur-body-score{
     position: relative;

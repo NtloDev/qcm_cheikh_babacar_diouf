@@ -14,41 +14,41 @@
         </div>
         <div class="conteneur">
         <?php 
-        session_start();
-        require_once("src/fonctions.php")  ;
-              if (isset($_GET['lien'])){
-                  switch($_GET['lien'])
-                  {
-                      case "accueil":
+            session_start();
+            require_once("src/fonctions.php")  ;
+            if (isset($_GET['lien']))
+            {
+                switch($_GET['lien'])
+                {
+                    case "accueil":
                         require_once("asset/pages/admin.php");
-                      break;
-                      case "jeux":
+                        break;
+                    case "jeux":
                         require_once("asset/pages/joueur.php");
-                      break;
-                  }
-              }
-              else{
-                  if (isset($_GET['statut']) && $_GET['statut']==="logout")
-                  {
-                      deconnexion();
-                      require_once("asset/pages/connect.php")  ;
-                  }
-                  else
-                  {
+                        $_SESSION['jouer']=1;
+                        break;
+                }
+            }
+            else
+            {
+                if (isset($_GET['statut']) && $_GET['statut']==="logout")
+                {
+                    deconnexion();
+                    require_once("asset/pages/connect.php")  ;
+                }
+                else
+                {
                     if (isset($_GET['inscription']))
                     {
                         require_once("asset/pages/connexion.php")  ;
                     }
-                    else{
+                    else
+                    {
                         require_once("asset/pages/connect.php")  ;
                     }
-                  
-                  }
-                
-              }
-             
+                }
+            } 
         ?> 
-         
         </div>     
     </body>
 </html>
