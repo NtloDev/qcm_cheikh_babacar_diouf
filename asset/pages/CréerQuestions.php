@@ -80,19 +80,24 @@
 <script>
     var nbrinput= 0;
     <?php $nbrinput=0; ?>
+    
     function AddInput()
     {
+        var b = document.querySelector("select"); 
+        b.setAttribute("disabled", "");
         nbrinput++;
         <?php $nbrinput++; ?>        
         const   texte = document.getElementById("select").options[document.getElementById('select').selectedIndex].text;
         if (texte == "Texte")
-        {                
+        {         
+            
             var divInputs = document.getElementById('form-question');
             var newInput = document.createElement('div');
             newInput.innerHTML = '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' + nbrinput + ' </label>' +
                                  '<input type=\"text\" name=\"rep'+nbrinput+'\" error =\"error-6\" class=\"input5-1\">' + '<a href=\"\" class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp2\" /></a>' +                   
                                  '<div class=\"error-form\" id=\"error-6\"></div>';
-            divInputs.appendChild(newInput);       
+            divInputs.appendChild(newInput);  
+            
         } 
         else if (texte == "Choix multiple")
         {                

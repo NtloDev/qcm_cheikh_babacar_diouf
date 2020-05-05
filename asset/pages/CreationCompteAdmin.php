@@ -10,6 +10,7 @@
         <div class="inscription-admin">
             <div class="inscription-admin-title1">S'INSCRIRE</div><br>
             <div class="inscription-admin-title2">Pour proposer des quizz</div><br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             <form method="post" action="" id="form-connexion">
                 <div class="inscription-admin-title-form">Prénom</div><br>
                 <input type="text" name="prenom" error ="error-3" class="input">
@@ -26,12 +27,30 @@
                 <div class="inscription-admin-title-form">Confirmer Password</div><br>
                 <input type="password" name="confirm-password" error ="error-7" class="input" >
                 <div class="error-form" id="error-7"></div><br><br>
-                <div class="avatar">Avatar <input type="file" name="photo" class="fileUpload"></div>
+                <div class="avatar">Avatar <input type="file" name="photo" alt="image profile" accept="image/png, image/jpeg" id="imgInp" class="fileUpload"></div>
+                
                 <input type="submit" name="creer" value="Creer un compte" class="creer">
             </form>
-            <img src="asset/JSON/<?php echo $_SESSION['user']['image']; ?>" class="profil-image-avatar" />
+            <img src="#" id="imgupload" class="profil-image-avatar" />
             <div class="profil-image-avatar-title">Avatar Admin</div>
         </div>
+                        <script>
+                        function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                    $('#imgupload').attr('src', e.target.result);
+                    }
+                    
+                    reader.readAsDataURL(input.files[0]); // convert to base64 string
+                }
+                }
+
+                $("#imgInp").change(function() {
+                readURL(this);
+                });
+                </script>
         <script>
             const inputs =  document.getElementsByTagName("input");
             for(input of inputs)

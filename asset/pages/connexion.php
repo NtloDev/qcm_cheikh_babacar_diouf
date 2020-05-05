@@ -1,6 +1,7 @@
         <div class="joueur-inscription">
             <div class="inscription-joueur">
                 <div class="inscription-joueur-title1">S'INSCRIRE</div><br>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                 <div class="inscription-joueur-title2">Pour tester votre niveau de culture generale</div><br><br><br>
                 <form method="post" action="" id="form-connexion">
                     <div class="inscription-joueur-title-form">Prénom</div><br>
@@ -18,12 +19,29 @@
                     <div class="inscription-joueur-title-form">Confirmer Password</div><br>
                     <input type="password" name="confirm-password" error ="error-7" class="input2" >
                     <div class="error-form" id="error-7"></div><br><br>
-                    <div class="avatar2">Avatar <input type="file" name="photo" class="fileUpload2"></div><br>
+                    <div class="avatar2">Avatar <input type="file" name="photo" class="fileUpload2" id="imgInp" accept="image/png, image/jpeg" id="imgInp"></div><br>
                     <input type="submit" name="creer" value="Creer un compte" class="creer2">
                 </form>
-                <img src="" class="profil-image-avatar" />
+                <img src="#" id="imgupload" class="profil-image-avatar" alt="image profile" />
                 <div class="profil-image-avatar-title">Avatar du joueur</div>
             </div> 
+            <script>
+        function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#imgupload').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>
             <script>
                 const inputs =  document.getElementsByTagName("input");
                 for(input of inputs)
