@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../CSS/style.css" rel="stylesheet">
+        
         <title>Mini Projet</title>
     </head>
     <body >
@@ -31,14 +31,17 @@
                 if (isset($_POST['ok']))
                 {
                     $nbrquestion = $_POST['nbrquestion'];
-                    $_SESSION['nbrquestion'] = 5;
+                    $_SESSION['nbrquestion'] = $nbrquestion;
                     $nbrelmnt=count($qes);
-                    $nbrparpage= 5;
-                    $_SESSION['nbrparpage']=5;
-                    $nbrdepage=ceil($nbrelmnt/$nbrparpage);
-                    
-                    
-                    for ($i=1 ; $i<= $_SESSION['nbrquestion'] ; $i++)
+                    $nbrparpage= 0 ;
+                    $_SESSION['exe'] =1;
+                   
+                }   
+                    if(isset($_SESSION['exe']))
+                    { 
+                    $k=$_GET['numPage'];
+                    $_SESSION['nbrparpage']=$k+$_SESSION['nbrquestion'];
+                    for ($i=$k ; $i< $_SESSION['nbrparpage'] ; $i++)
                     {?> <div class="questionaffiche">
                            <?php echo $i.'. ' ;
                             echo $qes[$i-1]['question'].'<br>'; ?>
@@ -71,48 +74,14 @@
                             }
                         }
                     }
-                    
-                }
-                $i=1;
-                ?> <a class="suivant" href="index.php?lien=accueil&link=1&numPage=<?php echo $i ?>">suivant</a><?php 
-                if (isset($_GET['numPage']))
-                    {
-
-                        for ($i=$_SESSION['nbrquestion']+1 ; $i<=$_SESSION['nbrparpage']+5 ; $i++)
-                        {?> <div class="questionaffiche">
-                            <?php echo $i.'. ' ;
-                             echo $qes[$i-1]['question'].'<br>'; ?>
-                         </div>
-                         <?php
-                         for ($j=1 ; $j<=5 ; $j++)
-                         {
-                             if ($qes[$i-1]['typereponse']== 'choixmultiple')
-                             {
-                                 if (isset($qes[$i-1]['rep'.$j]))
-                                 {
-                                     echo '<input type = "checkbox" name="choix" class="questionafficheinput" />  ';
-                                     echo $qes[$i-1]['rep'.$j].'<br>';
-                                 }
-                             }
-                             if ($qes[$i-1]['typereponse']== 'unseulchoix')
-                             {
-                                 if (isset($qes[$i-1]['rep'.$j]))
-                                 {
-                                     echo ' <input type = "radio" name="choix" class="questionafficheinput" />  ';
-                                     echo $qes[$i-1]['rep'.$j].'<br>';
-                                 }
-                             }
-                             if ($qes[$i-1]['typereponse']== 'texte')
-                             {
-                                 if (isset($qes[$i-1]['rep'.$j]))
-                                 {
-                                     echo '<input type = "texte" name="choix" class="questionafficheinput" />  ';
-                                 }
-                             }
-                         }
+                    ?> <a class="suivant" href="index.php?lien=accueil&link=1&numPage=<?php echo $_SESSION['nbrparpage'] ?>">suivant</a>
+                    <a class="precedent" href="index.php?lien=accueil&link=1&numPage=<?php echo $k-$_SESSION['nbrquestion'] ?>">precedent</a><?php 
                      }
-                      
-                    }
+                    
+                
+                
+                
+               
                 ?>
                 </div>
             </form>

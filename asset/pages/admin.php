@@ -20,9 +20,9 @@
                 <p class="nom-profil"><?php echo $_SESSION['user']['nomad'];?></p>
             </div>
             <div class="admin-container-menu-profil-links">
-                <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=1">Liste Questions  <img  src="asset/IMG/Images/Icônes/ic-liste.png" class="admin-container-menu-profil-links-icones" /></a></p><br>
+                <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=1&numPage=1">Liste Questions  <img  src="asset/IMG/Images/Icônes/ic-liste.png" class="admin-container-menu-profil-links-icones" /></a></p><br>
                 <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=2">Creer Admin &nbsp; &nbsp; <img  src="asset/IMG/Images/Icônes/ic-ajout.png" class="admin-container-menu-profil-links-icones"/></a></p><br>
-                <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=3">Liste Joueurs &nbsp; &nbsp;<img  src="asset/IMG/Images/Icônes/ic-liste.png" class="admin-container-menu-profil-links-icones"/></a></p><br>
+                <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=3&numPage=1">Liste Joueurs &nbsp; &nbsp;<img  src="asset/IMG/Images/Icônes/ic-liste.png" class="admin-container-menu-profil-links-icones"/></a></p><br>
                 <p ><a style="text-decoration:none" href="index.php?lien=accueil&link=4">Creer Questions <img  src="asset/IMG/Images/Icônes/ic-ajout.png" class="admin-container-menu-profil-links-icones"/></a></p><br>
             </div>
             <div>

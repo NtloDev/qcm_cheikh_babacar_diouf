@@ -242,6 +242,18 @@ position: relative;
     color: white;
     font-size: 22px;
 }
+.precedentq{
+    position: absolute;
+    top: 395px;
+    left: 25%;
+    background-color: #3addd6;
+    width: 15%;
+    height: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
 .suivant2{
     margin-top: 140px;
     position: absolute;
@@ -249,6 +261,18 @@ position: relative;
     background-color: #3addd6;
     width: 15%;
     height: 26px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.suivant3{
+    position: relative;
+    top: 395px;
+    left: 30%;
+    background-color: #080a0a;
+    width: 15%;
+    height: 22px;
     text-decoration: none;
     text-align: center;
     color: white;
