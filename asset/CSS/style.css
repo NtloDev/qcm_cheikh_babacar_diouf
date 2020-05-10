@@ -266,13 +266,13 @@ position: relative;
     color: white;
     font-size: 22px;
 }
-.suivant3{
-    position: relative;
-    top: 395px;
-    left: 30%;
-    background-color: #080a0a;
+.suivant4{
+    margin-top: 0px;
+    position: absolute;
+    left: 78%;
+    background-color: #3addd6;
     width: 15%;
-    height: 22px;
+    height: 26px;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -291,7 +291,7 @@ position: relative;
     font-size: 22px;
 }
 .precedent{
-    margin-top: 140px;
+    margin-top: 0px;
     position: absolute;
     left: 5%;
     background-color: #b2bebe;
@@ -589,7 +589,7 @@ h2{
 .joueur-body-question-rep
 {
     position: relative;
-    
+    height: 230px;
     font-size: 30px;
     margin-top: 15px;
     text-align: justify;
@@ -742,4 +742,13 @@ h2{
     position: relative;
     top: -18px;
     margin-left: -8%;
+}
+.topscore{
+    width: 50%;
+}
+.meilleur-score{
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    left: 50%;
 }

@@ -26,6 +26,7 @@
                     case "jeux":
                         require_once("asset/pages/joueur.php");
                         $_SESSION['jouer']=1;
+                        
                         break;
                 }
             }

@@ -31,6 +31,11 @@
                 if (isset($_POST['ok']))
                 {
                     $nbrquestion = $_POST['nbrquestion'];
+                    $uss=jsondata();
+                    $uss[0]['nbrquestions']=$nbrquestion;
+                                            $uss = json_encode($uss); 
+                                            // on sauvegarde le fichier
+                                            file_put_contents('asset/JSON/save.json',$uss);
                     $_SESSION['nbrquestion'] = $nbrquestion;
                     $nbrelmnt=count($qes);
                     $nbrparpage= 0 ;
@@ -77,11 +82,6 @@
                     ?> <a class="suivant" href="index.php?lien=accueil&link=1&numPage=<?php echo $_SESSION['nbrparpage'] ?>">suivant</a>
                     <a class="precedent" href="index.php?lien=accueil&link=1&numPage=<?php echo $k-$_SESSION['nbrquestion'] ?>">precedent</a><?php 
                      }
-                    
-                
-                
-                
-               
                 ?>
                 </div>
             </form>

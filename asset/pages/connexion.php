@@ -112,7 +112,7 @@ $("#imgInp").change(function() {
                             'mdp' => [],
                             'image' =>[],
                             'role'=>[],
-                            'score'=>[],
+                            $login.'score'=>[],
                         ];
                     // ensuite on affecte les donnes du formulaire sur le table tab
                     $tab['prenom'] = $prenom;
@@ -121,7 +121,7 @@ $("#imgInp").change(function() {
                     $tab['mdp'] = $mdp;
                     $tab['image'] = $photo;
                     $tab['role'] = 'joueur';
-                    $tab['score'] = 0;
+                    $tab[$login.'score'] = 0;
                     // on appelle le fichier json
                     $save = file_get_contents('asset/JSON/save.json');
                     // on decode le fichier et le transformer sous forme de table c'estquoi j'ai mis true

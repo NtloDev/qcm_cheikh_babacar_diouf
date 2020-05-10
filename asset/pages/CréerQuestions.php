@@ -84,7 +84,7 @@
     function AddInput()
     {
         var b = document.querySelector("select"); 
-        b.setAttribute("disabled", "");
+        b.setAttribute("hidden", "");
         nbrinput++;
         <?php $nbrinput++; ?>        
         const   texte = document.getElementById("select").options[document.getElementById('select').selectedIndex].text;
@@ -97,7 +97,7 @@
                                  '<input type=\"text\" name=\"rep'+nbrinput+'\" error =\"error-6\" class=\"input5-1\">' + '<a href=\"\" class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp2\" /></a>' +                   
                                  '<div class=\"error-form\" id=\"error-6\"></div>';
             divInputs.appendChild(newInput);  
-            
+        
         } 
         else if (texte == "Choix multiple")
         {                
@@ -106,7 +106,7 @@
             newInput.innerHTML = 
                     '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' +nbrinput+ '  </label>' +
                     '<input type=\"text\" name=\"rep'+nbrinput+'\" class=\"input5-1\" error =\"error-6\">' +                
-                    '<input type = \"checkbox\" name=\"choix' +nbrinput+ '\" value=\"choix' +nbrinput+ '\"  class =\"input6\">' +
+                    '<input type = \"checkbox\" name=\"choix' +nbrinput+ '\" value=\"rep'+nbrinput+'\"  class =\"input6\">' +
                     '\<a href=\'\' class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp\" /></a>' +
                     '<div class=\"error-form\" id=\"error-6\"></div>'  ;
             divInputs.appendChild(newInput);       
@@ -118,7 +118,7 @@
             newInput.innerHTML = 
                     '<label for = \"reponsetexte\" class=\"titres-input2\">Reponse' +nbrinput+ ' </label>' +
                     '<input type=\"text\" name=\"rep'+nbrinput+'\" error ="\error-6\" class=\"input5-1\">' +
-                    '<input type = \"radio\" name=\"val' +nbrinput+ '\" class =\"input7\">' +    
+                    '<input type = \"radio\" name=\"Choix'+nbrinput+'\" value=\"rep'+nbrinput+'\"  class =\"input7\">' +    
                     '<a href=\'\' class=\"link-form\"><img src=\"asset/IMG/Images/Icônes/ic-supprimer.png\" class=\"supp\" /></a>' +
                     '<div class=\"error-form\" id=\"error-6\"></div>'  ;
             divInputs.appendChild(newInput);       
